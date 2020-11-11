@@ -1,0 +1,134 @@
+@media only screen and (max-width: 1150px) {
+  .welcome-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .welcome-img {
+    margin-bottom: 50px;
+  }
+
+  .pricing-content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .pricing-card {
+    margin: 10px;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  #main-content {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #main-content {
+    width: 50%;
+  }
+  /*-----------------HAMBURGER-----------*/
+
+  .hamburger {
+    display: block;
+    opacity: 0;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    font-size: 30px;
+  }
+
+  .hamburger:checked ~ ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .line {
+    transition: all 0.2s;
+  }
+
+  .hamburger:checked ~ .hamburger-icon .line {
+    transition: all 0.2s;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #main-content {
+    align-content: center;
+    padding-right: none;
+    width: 40%;
+  }
+  h1 {
+    font-size: 90px;
+    padding-left: none;
+    padding-top: 50px;
+  }
+  footer p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #main-content {
+    width: 40%;
+  }
+  h1 {
+    font-size: 80px;
+    width: 65%;
+    padding-top: 20px;
+  }
+  footer p {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 660px) {
+  #main-content {
+    width: 40%;
+  }
+  h1 {
+    font-size: 70px;
+    padding-top: 50px;
+  }
+  .welcome-content,
+  .welcome-img,
+  #welcome-text {
+    padding: 10px;
+  }
+  footer p {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  #main-content {
+    width: 40%;
+  }
+  h1 {
+    font-size: 70px;
+    padding-top: 50px;
+  }
+  .welcome-content,
+  .welcome-img,
+  #welcome-text {
+    padding: 10px;
+  }
+  footer p {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .welcome-img,
+  #welcome-text {
+    width: 300px;
+  }
+  footer p {
+    font-size: 16px;
+  }
+}
