@@ -1,28 +1,58 @@
+@media only screen and (max-width: 1250px) {
+  .container {
+    width: 90%;
+  }
+  .grid-page {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 60px;
+  }
+}
 @media only screen and (max-width: 1150px) {
-  .welcome-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .welcome-img {
-    margin-bottom: 50px;
-  }
-
-  .pricing-content {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .pricing-card {
-    margin: 10px;
+  .container {
+    width: 90%;
   }
 }
 @media only screen and (max-width: 1050px) {
   #main-content {
     width: 90%;
   }
+  #maps-content,
+  #contact-text {
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+  }
 }
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 90%;
+  }
+  .grid-page {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-galerii {
+    grid-template-columns: 1fr;
+  }
+  .toote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  #toote-kirjeldus h2 {
+    margin-top: 20%;
+  }
 
+  #toote-kirjeldus .btn-uudis {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 900px) {
+  .container {
+    width: 90%;
+  }
   #main-content {
     width: 50%;
   }
@@ -56,18 +86,47 @@
   .hamburger:checked ~ .hamburger-icon .line {
     transition: all 0.2s;
   }
+
+  .hamburger:checked ~ .hamburger-icon .upper-line {
+    transform: rotate(45deg) translate(7px, 6px);
+  }
+
+  .hamburger:checked ~ .hamburger-icon .middle-line {
+    opacity: 0;
+  }
+
+  .hamburger:checked ~ .hamburger-icon .lower-line {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .uudis-content p {
+    font-size: 18px;
+  }
+  #toote-kirjeldus h2 {
+    margin-top: 0;
+  }
 }
 
 @media only screen and (max-width: 800px) {
+  .container {
+    width: 90%;
+  }
   #main-content {
     align-content: center;
     padding-right: none;
     width: 40%;
   }
   h1 {
-    font-size: 90px;
+    font-size: 70px;
     padding-left: none;
-    padding-top: 50px;
+  }
+  .uudis-img {
+    width: 95%;
+  }
+  #maps-content,
+  #contact-text {
+    flex-direction: column;
+    align-items: center;
   }
   footer p {
     font-size: 20px;
@@ -75,6 +134,9 @@
 }
 
 @media only screen and (max-width: 750px) {
+  .container {
+    width: 90%;
+  }
   #main-content {
     width: 40%;
   }
@@ -83,11 +145,24 @@
     width: 65%;
     padding-top: 20px;
   }
-  footer p {
-    font-size: 20px;
+}
+@media only screen and (max-width: 700px) {
+  .container {
+    width: 90%;
+  }
+  .grid-page {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8.75, 250px);
+  }
+  .grid-page {
+    grid-column-end: span 1;
+    margin-bottom: 30px;
   }
 }
 @media only screen and (max-width: 660px) {
+  .container {
+    width: 90%;
+  }
   #main-content {
     width: 40%;
   }
@@ -95,10 +170,25 @@
     font-size: 70px;
     padding-top: 50px;
   }
-  .welcome-content,
-  .welcome-img,
-  #welcome-text {
+  .uudis-content,
+  .uudis-img,
+  #uudis-text {
     padding: 10px;
+  }
+  .sorteerimine {
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-around;
+    margin: 5%;
+  }
+  label#sorteeri,
+  input#nupp-sorteeri {
+    width: 60px;
+    height: 40px;
+  }
+  select#tooted {
+    width: 210px;
   }
   footer p {
     font-size: 18px;
@@ -106,6 +196,9 @@
 }
 
 @media only screen and (max-width: 640px) {
+  .container {
+    width: 90%;
+  }
   #main-content {
     width: 40%;
   }
@@ -113,22 +206,37 @@
     font-size: 70px;
     padding-top: 50px;
   }
-  .welcome-content,
-  .welcome-img,
-  #welcome-text {
+  .uudis-content,
+  .uudis-img,
+  #uudis-text {
     padding: 10px;
   }
+
   footer p {
     font-size: 18px;
   }
 }
 
 @media only screen and (max-width: 540px) {
-  .welcome-img,
-  #welcome-text {
-    width: 300px;
+  .container {
+    width: 90%;
   }
   footer p {
     font-size: 16px;
+  }
+  .sorteerimine {
+    height: 50px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-around;
+    margin: 5%;
+  }
+  label#sorteeri,
+  input#nupp-sorteeri {
+    width: 60px;
+    height: 40px;
+  }
+  select#tooted {
+    width: 150px;
   }
 }

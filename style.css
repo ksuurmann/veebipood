@@ -2,6 +2,7 @@
   box-sizing: border-box;
   font-family: "Josefin Sans", sans-serif;
 }
+
 .container {
   width: auto;
 }
@@ -13,31 +14,29 @@ body {
 }
 
 p {
-  font-size: 30px;
+  font-size: 25px;
 }
 section {
   padding-bottom: 100px;
 }
 /*-----FONT------*/
 h1 {
-  font-size: 105px;
+  font-size: 100px;
   color: #1d1145;
   text-align: center;
-  margin-top: 40vh;
+  margin-top: 20vh;
   font-weight: normal;
-  width: 800px;
 }
 
 h2 {
   font-size: 42px;
   text-align: center;
   color: #1d1145;
-  margin: 80px;
+  margin: 60px;
   font-weight: bold;
 }
 
 div h2 {
-  transition: rotateY(360deg);
   font-weight: bold;
 }
 
@@ -53,18 +52,46 @@ li a {
   color: #1d1145;
 }
 
-#logo a {
-  text-decoration: none;
-  color: white;
-  width: 100px;
+#logo {
+  width: 65px;
+  height: 66px;
+  animation-name: example;
+  animation-duration: 10s;
+}
+@keyframes example {
+  0% {
+    fill: #f2a1a1;
+  }
+  20% {
+    fill: #ffe1d0;
+  }
+  40% {
+    fill: #f2a1a1;
+  }
+  60% {
+    fill: #ffe1d0;
+  }
+  70% {
+    fill: #f2a1a1;
+  }
+  80% {
+    fill: #ffe1d0;
+  }
+  90% {
+    fill: #ffe1d0;
+  }
+  95% {
+    fill: #f2a1a1;
+  }
+  100% {
+    fill: #f2a1a1;
+  }
 }
 
 /*---------------HEADER-----------------*/
 
-/*//laius 85% ja joondatud keskele Siin sees on logo, nav ja h1
-    pealkiri.*/
 #header-container {
-  color: white;
+  color: #ffe1d0;
   width: 85%;
   margin: auto;
 }
@@ -72,13 +99,13 @@ li a {
 #header-image {
   background-image: linear-gradient(
       112.69deg,
-      #ffe1d0 0%,
-      rgba(240, 32, 160, 0.6) 55%,
+      #ffe1d0 15%,
+      rgba(240, 32, 160, 0.6) 35%,
       #0db4b9 98%
     ),
     url(background-header.jpg);
   background-size: cover;
-  height: 60vh;
+  height: 100vh;
 }
 
 /*------------------------------------------LOGO-----------------------------------------*/
@@ -86,17 +113,19 @@ li a {
 #päis {
   display: flex;
   justify-content: space-between;
-  padding-top: 50px;
-  height: 50px;
+  padding-top: 0.5px;
+  height: 70px;
+  width: 100%;
   color: white;
 }
 
 #nav ul {
   margin: 50px;
-  width: 500px;
+  width: 450px;
   display: inline-flex;
   justify-content: space-around;
   font-size: 30px;
+  font: bold;
 }
 
 nav a {
@@ -118,28 +147,15 @@ nav a:hover {
 .hamburger-icon {
   width: 30px;
   margin: 10px auto 0 auto;
-  cursor: pointer;
   display: none;
+  cursor: pointer;
 }
 
 .line {
-  height: 7px;
-  width: 40px;
+  height: 4px;
+  width: 30px;
   background-color: white;
   margin-bottom: 4px;
-}
-
-#logo {
-  font-size: 36px;
-  font-weight: bold;
-  display: flex;
-  margin-left: 60px;
-}
-div #logo {
-  width: 150px;
-  height: 50px;
-  position: relative;
-  animation: logo 5s infinite;
 }
 
 .pealkiri {
@@ -149,94 +165,266 @@ div #logo {
 #main-content {
   width: 1060px;
   margin: auto;
-  align-items: center;
+
   line-height: 30px;
   margin-top: 200px;
 }
-.welcome-content {
+section .uudis {
+  margin: auto;
+  width: 90%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
-#welcome-image,
-#welcome-text {
-  width: 490px;
-  border-radius: 2px;
+.uudis-content {
+  padding: 5%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
+#uudis-image,
+#uudis-text {
+  align-items: center;
+}
+#uudis-image img {
+  height: 100px;
+  padding-top: 10%;
+  rotate: 90deg;
+}
+
+.btn-uudis {
+  width: 40%;
+  margin: auto;
+  margin-top: 2%;
+}
+.btn-uudis:hover {
+  background-color: #1d1145;
+  color: #f2a1a1;
+}
+/*--
 #welcome-text p:first-child::first-letter {
   font-weight: bold;
   font-size: 40px;
-}
-/*-------------------------------------------PRICING-FLEXIGA TEKKIS JAMA; JÃ„I ÃœHE -
-  Sinu koodi juures sul tegelikult ei ole vaja seda pricing-card div'i. Sul on iga kaart juba eraldi 
-  (klassita) div'i sees. Nende kolmele div'ile lisa laius 300px. SeejÃ¤rel saad pricing-content div'ile anda 
-  property justify-content: space-between; ja eemaldada sellelt flex-direction: column-reverse
-   (seljuhul aktiveerub vaikimisi vÃ¤Ã¤rtus flex-direction: row).------------------------------*/
-#pricing {
-  width: 1060px;
-  margin: auto;
-  align-items: center;
-  line-height: 30px;
-  margin-top: 200px;
-}
-.pricing-content {
+}--*/
+
+.sorteerimine {
+  height: 50px;
+  font-size: 16px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-  text-align: center;
+  justify-content: flex-end;
+  width: 96%;
+  margin-bottom: 10px;
+}
+label#sorteeri,
+input#nupp-sorteeri {
+  width: 150px;
+  height: 40px;
+}
+select#tooted {
+  width: 270px;
 }
 
-.pricing-card {
-  padding-bottom: 20px;
-  width: 400px;
+input#nupp-sorteeri:hover {
+  background-color: #1d1145;
+  color: #f2a1a1;
+  transition: 0.2s;
 }
-
-.pricing-card img {
-  width: 400px;
-}
-
 .pricing-card p {
   width: 300px;
   height: 100px;
 
   text-align: center;
 }
-/*---------------------------------BUTTON--------------------------------*/
-button {
-  box-shadow: 0px 1px 4px #5b1474;
-  border-radius: 2px;
-  border-color: #5b1474;
+.grid-adv {
+  padding-top: 5%;
 }
+
+.grid-page {
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 250px 250px 250px;
+  gap: 80px;
+}
+
+.grid-page .image-wrapper {
+  height: 240px;
+  margin-bottom: 10%;
+}
+
+.grid-page img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid-page .image-wrapper {
+  margin: 5%;
+  align-items: center;
+  padding-bottom: 5%;
+}
+
+/*---------------------------------BUTTON--------------------------------*/
+
 button {
-  border: 1px solid #5b1474;
+  box-shadow: 0px 1px 4px #1d1145;
+  border-radius: 2px;
+  border-color: #1d1145;
+  border: 1px solid #1d1145;
   background-color: white;
-  width: 60%;
-  height: 60px;
+  width: 100%;
+  height: 50px;
   transition: color 0.2s;
-  color: #5b1474;
+  color: #1d1145;
   font-weight: bold;
   font-size: 17px;
+  box-align: center;
 }
 button:hover {
-  background-color: #5b1474;
-  color: white;
+  background-color: #1d1145;
+  color: #f2a1a1;
 }
-/*-------------------------------------TESTIMONALS-----------------------------------------*/
-.testimonials {
+
+/*---Toote kirjeldus--*/
+
+.toote-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+}
+#toote-pilt,
+#toote-kirjeldus {
+  width: 50%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 2%;
+}
+#toote-pilt img {
+  width: 100%;
+}
+
+/*----Breadcrum----*/
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: #1d1145;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #1d1145;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #0db4b9;
+}
+
+/*-----Ostukorv----*/
+.ostukorv-content {
+  margin: 10%;
+}
+
+.row-header,
+.col1,
+.col2,
+.kokku {
+  border: 1px solid;
+  text-align: center;
+}
+.col1-pilt img {
+  width: 100%;
+}
+.col1 {
+  width: 150px;
+}
+.col2 {
+  width: 100px;
+}
+.kokku {
+  font-weight: bold;
+  font-size: 20px;
+}
+.row-header {
+  height: 40px;
+  font-weight: bold;
+}
+input#email {
+  width: 30%;
+  height: 25px;
+}
+.email-vorm,
+.maksma-kokku {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+.maksma,
+.tyhista {
+  width: 150px;
+}
+
+/*----ARVE*/
+.arve-teade {
+  text-align: center;
+  margin-bottom: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.teade {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/*-------------------------------------FIRMAST-----------------------------------------*/
+.firmast {
   align-items: center;
 }
 
-.testimonials-content {
+.firma-content {
   display: flex;
   justify-content: center;
-  width: 60%;
+  width: 70%;
   margin: auto;
 }
 
-.author {
-  text-align: right;
-  padding-bottom: 40px;
-  margin-right: 20%;
+.grid-galerii {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 500px 500px;
+  gap: 1px;
+}
+
+.grid-galerii .image-wrapper {
+  height: 1000px;
+  margin-bottom: 1%;
+}
+
+.grid-galerii img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.grid-galerii .image-wrapper {
+  margin: 5%;
+  align-items: center;
+  padding-bottom: 5%;
 }
 
 /*---Uudised---*/
@@ -252,7 +440,74 @@ button:hover {
   padding-bottom: 20px;
   width: 400px;
 }
+/*-----KONTAKT---*/
 
+section.contact {
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  line-height: 30px;
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+#maps-content,
+#contact-text {
+  width: 100%;
+  border-radius: 2px;
+}
+
+iframe {
+  width: 100%;
+  height: 400px;
+}
+
+#contact-text {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+#meie-contact,
+.contact-area {
+  width: 100%;
+}
+
+tr.row-kontakt {
+  font-size: 25px;
+}
+
+#contact-text input,
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+textarea#sisu {
+  height: 200px;
+  font-size: 20px;
+}
+input#email {
+  height: 50px;
+  font-size: 20px;
+}
+input#kinnitan,
+input#uudiskiri {
+  inline-size: auto;
+}
+input#saada {
+  height: 50px;
+  font-size: 20px;
+}
+input#saada:hover {
+  background-color: #1d1145;
+  color: #f2a1a1;
+}
 /*----------------------------------------------FOOTER-----------------------------------*/
 footer {
   width: 20%;
@@ -268,4 +523,9 @@ footer p {
   flex-direction: row;
   justify-content: center;
   justify-content: space-evenly;
+  color: #1d1145;
+}
+
+.media a img:hover {
+  color: #1d1145;
 }
