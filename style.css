@@ -111,7 +111,7 @@ li a {
 
 /*------------------------------------------LOGO-----------------------------------------*/
 
-#päis {
+#pÃ¤is {
   display: flex;
   justify-content: space-between;
   margin-top: 0px;
@@ -126,7 +126,7 @@ li a {
   display: inline-flex;
   justify-content: space-around;
   font-size: 30px;
-  font: bold;
+  font-weight: bold;
 }
 
 nav a {
@@ -336,53 +336,63 @@ ul.breadcrumb li a:hover {
 }
 
 /*-----Ostukorv----*/
-.ostukorv-content {
-  margin: 10%;
+.grid-adv-ost {
+  padding-top: 1%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 450px 450px;
+  gap: 40px;
+  margin: 0 auto;
+  padding-bottom: 10%;
 }
 
-.row-header,
-.col1,
-.col2,
-.kokku,
-.kokku1 {
-  border: 1px solid;
-  text-align: center;
+.grid-ost {
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
 }
-.col1-pilt img {
-  height: auto;
+
+.grid-ost .grid-ost-wrapper {
+  height: 440px;
+  margin-bottom: 1%;
+}
+
+.grid-ost img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  align: center;
 }
-.col1 {
-  width: 150px;
+
+.ost-sisu {
+  width: 100%;
+  display: block;
 }
-.col2,
-.col1-pilt,
-.kokku1 {
-  width: 100px;
-}
-.kokku,
-.kokku1 {
-  font-weight: bold;
+.ost-sisu p,
+.maksma-grid p {
   font-size: 20px;
 }
-.row-header {
-  height: 40px;
-  font-weight: bold;
+
+.eemaldaost {
+  width: 25%;
 }
+
+.maksma-grid {
+  width: 100%;
+  display: block;
+  margin-bottom: 10%;
+}
+
 input#email {
-  width: 30%;
-  height: 25px;
+  height: 20px;
+  width: 60%;
+  margin-bottom: 2%;
 }
-.email-vorm,
-.maksma-kokku {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 20px;
-}
+
 .maksma,
 .tyhista {
-  width: 150px;
+  width: 200px;
+  padding-bottom: 2%;
 }
 
 /*----ARVE*/
@@ -412,18 +422,18 @@ input#email {
 .grid-galerii {
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 500px 500px;
   gap: 1px;
+  margin-bottom: 70px;
 }
 
 .grid-galerii .image-wrapper {
-  height: 1000px;
   margin-bottom: 1%;
 }
 
 .grid-galerii img {
-  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 

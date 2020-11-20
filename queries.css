@@ -19,6 +19,16 @@
     gap: 1px;
   }
 }
+@media only screen and (max-width: 1090px)
+{
+  .grid-adv-ost {
+    grid-template-columns: 1fr;
+    grid-template-rows:  450px 450px 450px;
+  }
+  .eemaldaost{
+    width: 40px;
+  }
+}
 @media only screen and (max-width: 1050px) {
   .container {
     width: 100%;
@@ -137,12 +147,12 @@
   }
   #main-content {
     align-content: center;
-    padding-right: none;
+    padding-right: 0;
     width: 40%;
   }
   h1 {
     font-size: 70px;
-    padding-left: none;
+    padding-left: 0;
   }
   .uudis-img {
     width: 95%;
