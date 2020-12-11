@@ -111,7 +111,7 @@ li a {
 
 /*------------------------------------------LOGO-----------------------------------------*/
 
-#pÃ¤is {
+#päis {
   display: flex;
   justify-content: space-between;
   margin-top: 0px;
@@ -339,8 +339,8 @@ ul.breadcrumb li a:hover {
 .grid-adv-ost {
   padding-top: 1%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 450px 450px;
+  grid-template-columns: 1fr 1fr  ;
+  grid-template-rows:  450px 450px;
   gap: 40px;
   margin: 0 auto;
   padding-bottom: 10%;
@@ -364,20 +364,20 @@ ul.breadcrumb li a:hover {
   object-fit: cover;
 }
 
-.ost-sisu {
+
+.ost-sisu{
   width: 100%;
   display: block;
 }
-.ost-sisu p,
-.maksma-grid p {
-  font-size: 20px;
+.ost-sisu p, .maksma-grid p{
+font-size: 20px;
 }
 
-.eemaldaost {
+.eemaldaost{
   width: 25%;
 }
 
-.maksma-grid {
+.maksma-grid{
   width: 100%;
   display: block;
   margin-bottom: 10%;
@@ -388,6 +388,7 @@ input#email {
   width: 60%;
   margin-bottom: 2%;
 }
+
 
 .maksma,
 .tyhista {
@@ -421,16 +422,14 @@ input#email {
 
 .grid-galerii {
   padding: 0;
+  justify-content: space-evenly;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 500px 500px;
-  gap: 1px;
-  margin-bottom: 70px;
+  grid-template-columns:1fr  1fr;
+  grid-template-rows: 1000px;
+  gap: 10px;
+  margin-bottom: 5px;
 }
 
-.grid-galerii .image-wrapper {
-  margin-bottom: 1%;
-}
 
 .grid-galerii img {
   height: 100%;
