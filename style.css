@@ -126,7 +126,6 @@ li a {
   display: inline-flex;
   justify-content: space-around;
   font-size: 30px;
-  font: bold;
 }
 
 nav a {
@@ -338,8 +337,8 @@ ul.breadcrumb li a:hover {
 .grid-adv-ost {
   padding-top: 1%;
   display: grid;
-  grid-template-columns: 1fr 1fr  ;
-  grid-template-rows:  450px 450px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 450px 450px;
   gap: 40px;
   margin: 0 auto;
   padding-bottom: 10%;
@@ -363,20 +362,20 @@ ul.breadcrumb li a:hover {
   object-fit: cover;
 }
 
-
-.ost-sisu{
+.ost-sisu {
   width: 100%;
   display: block;
 }
-.ost-sisu p, .maksma-grid p{
+.ost-sisu p,
+.maksma-grid p {
   font-size: 20px;
 }
 
-.eemaldaost{
+.eemaldaost {
   width: 25%;
 }
 
-.maksma-grid{
+.maksma-grid {
   width: 100%;
   display: block;
   margin-bottom: 10%;
@@ -393,7 +392,6 @@ input#email {
   width: 200px;
   padding-bottom: 2%;
 }
-
 
 /*----ARVE*/
 .arve-teade {
@@ -425,7 +423,7 @@ input#email {
   justify-content: center;
   width: 90%;
   margin-left: auto;
-  margin-right:auto;
+  margin-right: auto;
 }
 .column {
   width: 45%;
@@ -433,13 +431,9 @@ input#email {
   margin-left: 5%;
 }
 
-
-
 .column img {
   width: 95%;
 }
-
-
 
 /*---Uudised---*/
 

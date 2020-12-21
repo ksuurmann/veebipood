@@ -129,12 +129,10 @@
   }
   #main-content {
     align-content: center;
-    padding-right: none;
     width: 40%;
   }
   h1 {
     font-size: 70px;
-    padding-left: none;
   }
   .uudis-img {
     width: 95%;
