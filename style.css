@@ -126,7 +126,7 @@ li a {
   display: inline-flex;
   justify-content: space-around;
   font-size: 30px;
-  font-weight: bold;
+  font: bold;
 }
 
 nav a {
@@ -334,7 +334,6 @@ ul.breadcrumb li a {
 ul.breadcrumb li a:hover {
   color: #0db4b9;
 }
-
 /*-----Ostukorv----*/
 .grid-adv-ost {
   padding-top: 1%;
@@ -370,7 +369,7 @@ ul.breadcrumb li a:hover {
   display: block;
 }
 .ost-sisu p, .maksma-grid p{
-font-size: 20px;
+  font-size: 20px;
 }
 
 .eemaldaost{
@@ -385,16 +384,16 @@ font-size: 20px;
 
 input#email {
   height: 20px;
-  width: 60%;
+  width: 70%;
   margin-bottom: 2%;
 }
-
 
 .maksma,
 .tyhista {
   width: 200px;
   padding-bottom: 2%;
 }
+
 
 /*----ARVE*/
 .arve-teade {
@@ -411,36 +410,36 @@ input#email {
 /*-------------------------------------FIRMAST-----------------------------------------*/
 .firmast {
   align-items: center;
+  witdh: 90%;
 }
 
 .firma-content {
   display: flex;
-  justify-content: center;
+  align-items: center;
   width: 70%;
   margin: auto;
 }
 
-.grid-galerii {
-  padding: 0;
-  justify-content: space-evenly;
-  display: grid;
-  grid-template-columns:1fr  1fr;
-  grid-template-rows: 1000px;
-  gap: 10px;
-  margin-bottom: 5px;
+.row {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right:auto;
 }
-
-
-.grid-galerii img {
-  height: 100%;
-  object-fit: cover;
-}
-
-.grid-galerii .image-wrapper {
+.column {
+  width: 45%;
   margin: 5%;
-  align-items: center;
-  padding-bottom: 5%;
+  margin-left: 5%;
 }
+
+
+
+.column img {
+  width: 95%;
+}
+
+
 
 /*---Uudised---*/
 
